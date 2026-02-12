@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_fake_ringing">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="@string/incomingcall"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/Blue"
+        android:contentDescription="@null"
+        android:src="@drawable/user1" />
+
+    <TextView
+        android:id="@+id/chosenfakename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView1"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="@string/fakecallname" />
+
+    <TextView
+        android:id="@+id/chosenfakenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chosenfakename"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/fakecallnumber" />
+
+    <Button
+        android:id="@+id/answercall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="29dp"
+        android:contentDescription="@null"
+        android:background="@drawable/user1" />
+
+    <Button
+        android:id="@+id/rejectcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/answercall"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:contentDescription="@null"
+        android:background="@drawable/user1" />
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".SafeMap">
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="151dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="Incident Image"
+        android:src="@drawable/report_transparent" />
+
+    <!-- Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incident Reporting"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Subheading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report an incident and upload an image of an unsafe area."
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/light_gray"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Description Input -->
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Describe the incident ..."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="top|start"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textColorHint="#888888"/>
+
+    <!-- Location Text -->
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetching location..."
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitFeedbackBtn"
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_blue_button"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:drawablePadding="-45dp"
+        android:gravity="center"
+        android:text="Submit Report "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Image Capture & Upload Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <!-- Capture Image Button with Icon -->
+        <Button
+            android:id="@+id/captureImageBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blue_button"
+            android:drawableLeft="@drawable/ic_menu_camera"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text=" Capture Image"
+            android:textColor="@color/background_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Upload Image Button with Icon -->
+        <Button
+            android:id="@+id/uploadImageBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blue_button"
+            android:drawableLeft="@drawable/ic_menu_gallery"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text=" Upload Image"
+            android:textColor="@color/background_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

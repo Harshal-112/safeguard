@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="139dp"
+        android:layout_height="129dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/img_7"
+
+        tools:srcCompat="@drawable/img_7" />
+
+    <!-- Title Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Use the OK Button to confirm that you’re OK or get help"
+        android:textColor="@color/light_gray"
+        android:textSize="17sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/medium_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- Safety Check Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Safety Check"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <!-- Info Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="If you don’t respond, emergency sharing starts in"
+            android:textColor="@color/medium_gray"
+            android:textSize="16sp" />
+
+        <!-- Circular Timer -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="228dp"
+                android:layout_height="203dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="100"
+                android:progressDrawable="@drawable/circle_progress_bar" />
+
+            <!-- Circular Timer Text -->
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="148dp"
+                android:layout_height="147dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_background2"
+                android:gravity="center"
+                android:text="60"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <!-- I'm OK Button -->
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/rounded_blue_button"
+            android:drawablePadding="-50dp"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            android:text="I'm OK"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold" />
+
+        <!-- Start Sharing Button -->
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/rounded_blue_button"
+            android:text="Start sharing now"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="-50dp"/>
+
+        <!-- Call Button -->
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_blue_button"
+            android:text="Call 112"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:drawablePadding="-50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"/>
+    </LinearLayout>
+</LinearLayout>

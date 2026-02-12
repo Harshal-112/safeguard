@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="closeButton" type="id"/>
+    <item name="progressBar" type="id"/>
+    <item name="timerText" type="id"/>
+    <item name="okButton" type="id"/>
+    <item name="shareButton" type="id"/>
+    <item name="callButton" type="id"/>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Top Image -->
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="133dp"
+        android:layout_height="138dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Voice Assistant Icon"
+        android:src="@drawable/voice" />
+
+    <!-- Heading: Voice Assistant -->
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Voice Assistant"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/dark_gray"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Subheading -->
+    <TextView
+        android:id="@+id/txtSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Your personal Voice assistant at your service for Your Safety "
+        android:textColor="@color/blue"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:shadowColor="@color/dark_gray"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Divider -->
+
+    <!-- Speech Input Text -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtSubHeading"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/medium_gray" />
+
+    <TextView
+        android:id="@+id/txtSpeechInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSubHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        android:shadowColor="@color/dark_gray"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Speaker Button with Circle Background -->
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="156dp"
+        android:layout_height="162dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerInside"
+        android:src="@drawable/voice1" />
+
+    <!-- Tap on Mic Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnSpeak"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Tap on the mic to Speak"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:shadowColor="@color/dark_gray"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+
+
+</RelativeLayout>

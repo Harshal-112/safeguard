@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1086074668655",
+    "firebase_url": "https://safeguard-b5ea5-default-rtdb.firebaseio.com",
+    "project_id": "safeguard-b5ea5",
+    "storage_bucket": "safeguard-b5ea5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086074668655:android:54199da779327aea092f9a",
+        "android_client_info": {
+          "package_name": "com.example.women_safeguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYy6xOP00P-ntqL8TjkNw5jEr3P_0tC0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
