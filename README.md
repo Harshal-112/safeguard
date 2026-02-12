@@ -1,28 +1,55 @@
-# Women Safeguard 🛡️
+# Safeguard
 
-**Women Safeguard** is a comprehensive Android security application designed to provide immediate assistance and deterrence tools for women's safety. It features real-time location tracking, voice-activated emergency triggers, and a companion smartwatch app.
+## Project Overview
+Safeguard is a comprehensive solution aimed at enhancing digital security and protecting sensitive data. The project focuses on providing users with tools and resources to safeguard their online presence against various threats.
 
-## 🚀 Key Features
+## Features
+- **Data Privacy**: Ensures users' personal data is kept secure and private.
+- **Threat Detection**: Tools for identifying potential security threats and vulnerabilities.
+- **User-friendly Interface**: A simple and intuitive UI to make navigation easier.
+- **Regular Updates**: Continuous improvements and updates to adapt to new security challenges.
 
-* **🗣️ Voice Emergency:** automatically detects distress commands to trigger SOS alerts without needing to touch the phone.
-* **📞 Fake Ringing:** Simulates an incoming phone call to help users exit uncomfortable or unsafe situations gracefully.
-* **📍 Safe Map & Location Sharing:** Real-time location tracking to keep trusted contacts informed of your whereabouts.
-* **⌚ Wear OS Companion:** Includes a standalone `watchapp` module for immediate access to safety features directly from a smartwatch.
-* **🔐 User Authentication:** Secure login system to protect user data.
+## Installation Instructions
+To install Safeguard, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Harshal-112/safeguard.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd safeguard
+   ```
+3. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-## 🛠️ Tech Stack
+## Usage Examples
+To use Safeguard, launch the application and follow these examples:
+- **Check for vulnerabilities:**
+   ```bash
+   node app.js check-vulns
+   ```
+- **Encrypt your data:**
+   ```bash
+   node app.js encrypt --data "Sensitive Information"
+   ```
 
-* **Language:** Java
-* **UI:** XML Layouts
-* **Backend:** Firebase (Auth, Database)
-* **Platform:** Android Mobile & Wear OS
+## Contributing Guidelines
+We welcome contributions to Safeguard! To get involved:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your commit message here"
+   ```
+4. Push your branch to your fork:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Create a pull request and describe your changes.
 
-## 📂 Project Structure
-
-```bash
-Women_Safeguard/
-├── app/                  # Main Android Mobile Application
-│   ├── src/main/java/    # Java Source Code (Dashboard, Maps, Services)
-│   └── src/main/res/     # Layouts and Assets
-├── watchapp/             # Wear OS Smartwatch Module
-└── build.gradle          # Project Configuration
+Thank you for considering contributing to Safeguard!
