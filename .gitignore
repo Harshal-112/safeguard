@@ -1,0 +1,27 @@
+# Java and Kotlin related files
+
+# Compiled source #
+*.class
+
+# Log files #
+*.log
+
+# Maven files #
+*.jar
+*.war
+*.ear
+*target/
+.mvn/
+
+# IntelliJ IDEA files #
+*.iml
+.idea/
+
+# Kotlin specific files #
+*.kt
+
+# Other IDEs #
+.vscode/
+*.swp
+*~
+*.lock
