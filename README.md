@@ -10,8 +10,10 @@ The Women's Safety App is designed to provide safety features for women in vario
 ## Features
 - Emergency contact notifications
 - Location tracking
-- QR code scanning
+- Fake Ringing
 - SOS button
+- Wear OS Support
+- Voice Emergency
 
 ## Getting Started
 1. Clone the repository:
